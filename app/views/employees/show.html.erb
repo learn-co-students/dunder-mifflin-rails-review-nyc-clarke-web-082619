@@ -1,0 +1,12 @@
+<h1> <%= @employee.full_name %></h1><br>
+
+<h3>Nickname:</h3>
+<p><%= @employee.alias %></p><br>
+<h3>Title:</h3>
+<p><%= @employee.title %></p><br>
+<h3>Branch Location:</h3>
+<p><%= @employee.office %></p><br>
+<h3>Photo:</h3>
+<img src="<%= @employee.img_url %>"><br>
+<h3>Pup:</h3>
+<p><%= @employee.dog.name %></p><br>

@@ -1,0 +1,12 @@
+<h1> Add a Pup!</h1>
+<%= form_for @dog do |f| %>
+<label>Name:</label>
+<%= f.text_field :name %><br>
+<label>Age:</label>
+<%= f.text_field :age %><br>
+<label>Breed:</label>
+<%= f.text_field :breed %><br>
+<label>Hooman:</label>
+<%= f.collection_select(:id, Employee.all, :id, :first_name) %>
+<%= f.submit %>
+<% end %>

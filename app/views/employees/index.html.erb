@@ -1,0 +1,5 @@
+<h1> Choose An Employee! </h1>
+<% @employees.each do |emp| %>
+<%= link_to "#{emp.full_name} - #{emp.title}", employee_path(emp) %><br>
+<br>
+<% end %>

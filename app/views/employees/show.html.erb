@@ -1,0 +1,15 @@
+<h1>Employee INFO</h1>
+<label>First Name: <%= @employee.first_name %></label><br>
+<label>Last Name: <%= @employee.last_name %></label><br>
+<label>Alias: <%= @employee.alias %></label><br>
+<label>Title: <%= @employee.title %></label><br>
+<label>Office: <%= @employee.office %></label><br>
+<label>Dog: <%= @employee.dog.name %></label><br>
+
+
+
+<img src=<%=@employee.img_url%>>
+
+<form action= <%=edit_employee_path(@employee)%>>
+    <input type="submit" value="edit_employee" />
+</form>

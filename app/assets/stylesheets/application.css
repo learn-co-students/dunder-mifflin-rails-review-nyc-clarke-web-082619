@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+ .mybutton{
+    width: 30px;
+    height: 20px;
+    border: 3px solid grey;
+ }

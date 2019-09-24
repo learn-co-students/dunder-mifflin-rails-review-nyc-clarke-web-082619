@@ -1,0 +1,12 @@
+<h1><%= @employee.first_name + " " + @employee.last_name %></h1>
+<label> Alias: </label>
+<%= @employee.alias %><br>
+<label> Title: </label>
+<%= @employee.title %><br>
+<label> Office: </label>
+<%= @employee.office %><br>
+<label> Dog: </label>
+<%= Dog.find(@employee.dog_id).name %>
+
+<%= button_to "Edit Employee", { action: :edit, id: @employee.id}, method: :get %>
+<%= button_to "Back", { action: :index, id: @employees}, method: :get %>

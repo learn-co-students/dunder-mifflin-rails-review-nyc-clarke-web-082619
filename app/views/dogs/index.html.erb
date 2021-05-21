@@ -1,0 +1,6 @@
+<% @dogs.each do |dog| %>
+    <p>Name:  <%= link_to dog.name, controller: "dogs", action: "show", id:dog.id %>   </p>
+    <p>Age: <%= dog.age %></p>
+    <p>Breed: <%= dog.breed %></p>
+    <br>
+<% end %>

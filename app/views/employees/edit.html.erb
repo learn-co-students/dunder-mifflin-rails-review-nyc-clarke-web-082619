@@ -1,0 +1,17 @@
+<h1>Employee Name</h1>
+<%= form_for @employee do |f| %>
+    <label>First Name:</label>
+    <%= f.text_field :first_name %><br>
+    <label>Last Name:</label>
+    <%= f.text_field :last_name %><br>
+    <label>alias:</label>
+    <%= f.text_field :alias %><br>
+    <label>title:</label>
+    <%= f.text_field :title %><br>
+    <label>office:</label>
+    <%= f.text_field :office %><br>
+    <label>Image URL:</label>
+    <%= f.text_field :img_url %><br>
+    <%= f.collection_select(:dog_id, @dogs, :id, :name)      %>
+    <%= f.submit %>
+<% end %>

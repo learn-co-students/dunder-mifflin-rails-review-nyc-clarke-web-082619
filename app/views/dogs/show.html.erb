@@ -1,0 +1,9 @@
+<h1>Check Out This Good Boy!</h1>
+<p> His name <%=  @dog.name %>.</p><br>
+<p> He is <%= @dog.age %> <%= @dog.breed %>.</p><br>
+<% Employee.all.each do |emp| %>
+ <% if emp.dog == @dog %>
+ <p> He like <%= emp.full_name %>
+ <% end %>
+ <% end %>
+<br>

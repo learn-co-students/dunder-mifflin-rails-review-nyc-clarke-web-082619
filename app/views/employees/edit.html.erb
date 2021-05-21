@@ -1,0 +1,25 @@
+<h1>Update Employee Form</h1>
+<%= form_for :employees do |f| %>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name, value: @employee.first_name %><br>
+
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name, value: @employee.last_name %><br>
+
+    <%= f.label :alias %>
+    <%= f.text_field :alias, value: @employee.alias %><br>
+
+    <%= f.label :title %>
+    <%= f.text_field :title, value: @employee.title %><br>
+
+    <%= f.label :office %>
+    <%= f.text_field :office, value: @employee.office %><br>
+
+    <%= f.label :img_url %>
+    <%= f.text_field :img_url, value: @employee.img_url %><br>
+
+    <%= f.label :dog_id %>
+    <%= f.collection_select(:dog_id, @dogs, :id, :name, {selected: @employee.dog_id}) %><br>
+
+    <%= f.submit %>
+<% end %>

@@ -1,0 +1,10 @@
+<h1><%= @employee.to_s %></h1>
+<p><%= image_tag(@employee.img_url) %><br>
+<%= @employee.img_url %><br><br>
+Alias: <%= @employee.alias %><br>
+Title: <%= @employee.title %><br>
+Office: <%= @employee.office %><br>
+Dog: <%= @employee.dog.name %><br><br>
+
+<%= link_to("Edit Employee", edit_employee_path(@employee)) %>
+</p>
